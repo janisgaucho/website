@@ -11,10 +11,15 @@ body {
 
 p, a {
     color: #607B96;
+    margin: 0;
 }
 
 h1, h2 {
     color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -25,10 +30,35 @@ h1, h2 {
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+MENU
+*/
+.menu-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #607B96;
 }
+
+.logo {
+    border-right: 1px solid #607B96;
+    padding: 8px 32px;
+}
+
+.menu-links {
+    border-right: 1px solid #607B96;
+    padding: 0 32px;
+    display: flex;
+    gap: 32px;
+}
+
+/* .menu-links p:nth-child(2) {
+    border-right: 1px solid #607B96;
+} */
 
 /*
 TESTIMONIALS
@@ -38,6 +68,7 @@ TESTIMONIALS
     background-color: #011221;
     border-radius: 8px;
     border: 1px solid #607B96;
+    scale: 0.8;
 }
 
 .box-container {
