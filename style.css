@@ -56,9 +56,16 @@ MENU
     gap: 32px;
 }
 
-/* .menu-links p:nth-child(2) {
+.menu-contact {
+    padding: 0 32px;
+    border-left: 1px solid #607B96;
+}
+
+.menu-links p:nth-child(2) {
     border-right: 1px solid #607B96;
-} */
+    border-left: 1px solid #607B96;
+    padding: 0 32px;
+}
 
 /*
 TESTIMONIALS
@@ -104,4 +111,45 @@ TESTIMONIALS
 
 .back-btn:hover, .next-btn:hover {
     background: #607b9657;
+}
+
+/*
+FOOTER
+*/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #607B96;
+}
+
+.follow-me {
+    border-right: 1px solid #607B96;
+    padding: 8px 32px;
+}
+
+.socials {
+    border-right: 1px solid #607B96;
+    padding: 0 32px;
+    display: flex;
+    gap: 32px;
+}
+
+.fa-brands {
+    color: #607B96;
+}
+
+.github a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 0 32px;
+    border-left: 1px solid #607B96;
+}
+
+.socials a:nth-child(2) {
+    border-right: 1px solid #607B96;
+    border-left: 1px solid #607B96;
+    padding: 0 32px;
 }
