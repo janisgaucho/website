@@ -1,8 +1,19 @@
-body {
-    background-color: #01080E;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+h1, h2, p, a {
+    font-family: 'Fira Code', sans-serif;
 }
 
-a {
+body {
+    background-color: #01080E;
+    padding: 64px;
+}
+
+p, a {
+    color: #607B96;
+}
+
+h1, h2 {
     color: white;
 }
 
@@ -17,4 +28,49 @@ a {
     padding: 16px;
     display: flex;
     flex-direction: row;
+}
+
+/*
+TESTIMONIALS
+*/
+.testimonials-container {
+    padding: 32px;
+    background-color: #011221;
+    border-radius: 8px;
+    border: 1px solid #607B96;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+.box-container::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    width: 360px;
+}
+
+.btns-container {
+    gap: 16px;
+    display: inline-flex;
+}
+.back-btn, .next-btn {
+    color: #607B96;
+    background: none;
+    border: 1px solid #607B96;
+    border-radius: 8px;
+    padding: 8px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.back-btn:hover, .next-btn:hover {
+    background: #607b9657;
 }
