@@ -6,7 +6,7 @@ h1, h2, p, a {
 
 body {
     background-color: #01080E;
-    padding: 64px;
+    padding: 32px;
 }
 
 p, a {
@@ -44,27 +44,42 @@ MENU
     border-bottom: 1px solid #607B96;
 }
 
+.menu-container div:nth-child(3) {
+    margin-left: auto;
+
+}
+
 .logo {
     border-right: 1px solid #607B96;
     padding: 8px 32px;
+    cursor: not-allowed;
 }
 
 .menu-links {
     border-right: 1px solid #607B96;
-    padding: 0 32px;
     display: flex;
-    gap: 32px;
+}
+.menu-links a:nth-child(2) {
+    border-right: 1px solid #607B96;
+    border-left: 1px solid #607B96;
+}
+.menu-links a {
+    padding: 8px 32px;
 }
 
 .menu-contact {
-    padding: 0 32px;
     border-left: 1px solid #607B96;
+    background-color: #607b9633;
+    border-radius: 0 16px 0 0;
 }
 
-.menu-links p:nth-child(2) {
-    border-right: 1px solid #607B96;
-    border-left: 1px solid #607B96;
-    padding: 0 32px;
+.menu-contact a {
+    padding: 8px 32px;
+    display: block;
+}
+
+.active {
+    border-bottom: 3px solid #607B96;
 }
 
 /*
@@ -123,16 +138,23 @@ FOOTER
     border-top: 1px solid #607B96;
 }
 
+.footer-container div:nth-child(3) {
+    margin-left: auto;
+}
+
 .follow-me {
     border-right: 1px solid #607B96;
     padding: 8px 32px;
+    cursor: not-allowed;
 }
 
 .socials {
     border-right: 1px solid #607B96;
-    padding: 0 32px;
     display: flex;
-    gap: 32px;
+}
+
+.socials a {
+    padding: 8px 32px;
 }
 
 .fa-brands {
@@ -144,12 +166,35 @@ FOOTER
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 8px;
-    padding: 0 32px;
+    padding: 8px 32px;
     border-left: 1px solid #607B96;
 }
 
 .socials a:nth-child(2) {
     border-right: 1px solid #607B96;
     border-left: 1px solid #607B96;
-    padding: 0 32px;
+    padding: 8px 32px;
+}
+
+/*
+HOMEPAGE
+*/
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.presentation, .snake-game {
+    padding: 64px;
+    width: 40vw;
+    height: 30vw;
+    align-content: center;
+}
+
+.presentation h1 {
+    margin: 0;
+}
+
+.janis-job {
+    margin-bottom: 64px;
 }
