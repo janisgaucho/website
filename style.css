@@ -51,8 +51,10 @@ MENU
 
 .logo {
     border-right: 1px solid #607B96;
-    padding: 8px 32px;
+    padding: 8px 0;
     cursor: not-allowed;
+    width: 200px;
+    text-align: center;
 }
 
 .menu-links {
@@ -65,6 +67,10 @@ MENU
 }
 .menu-links a {
     padding: 8px 32px;
+}
+
+.menu-links a:hover {
+    background-color: #607b9633;
 }
 
 .menu-contact {
@@ -80,6 +86,7 @@ MENU
 
 .active {
     border-bottom: 3px solid #607B96;
+    font-weight: 500;
 }
 
 /*
@@ -157,6 +164,10 @@ FOOTER
     padding: 8px 32px;
 }
 
+.socials a:hover, .github a:hover {
+    background-color: #607b9633;
+}
+
 .fa-brands {
     color: #607B96;
 }
@@ -185,7 +196,7 @@ HOMEPAGE
     justify-content: center;
 }
 .presentation, .snake-game {
-    padding: 64px;
+    padding: 32px 64px;
     width: 40vw;
     height: 30vw;
     align-content: center;
@@ -197,4 +208,34 @@ HOMEPAGE
 
 .janis-job {
     margin-bottom: 64px;
+}
+
+/*
+PORTFOLIO
+*/
+.left-bar {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #607B96;
+    width: 200px;
+}
+
+.left-bar p {
+    border-bottom: 1px solid #607B96;
+    padding: 8px 0;
+}
+
+.filter {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    color: #607B96;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 0.9em;
+    gap: 8px;
+}
+
+.filter label {
+    display: flex;
+    justify-content: space-between;
 }

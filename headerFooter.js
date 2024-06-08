@@ -18,6 +18,15 @@ class SpecialHeader extends HTMLElement {
 }
 customElements.define('special-header', SpecialHeader)
 
+const liens = document.querySelectorAll('.menu-link');
+const urlActuelle = window.location.pathname;
+
+for (const lien of liens) {
+  lien.classList.remove('active');
+  if (lien.href.includes(urlActuelle) && !lien.href.includes("contact")) {
+    lien.classList.add('active');
+  }
+}
 
 // FOOTER
 class SpecialFooter extends HTMLElement {
