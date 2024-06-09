@@ -7,6 +7,7 @@ h1, h2, p, a {
 body {
     background-color: #01080E;
     padding: 32px;
+    overflow: hidden;
 }
 
 p, a {
@@ -23,15 +24,34 @@ a {
 }
 
 .container {
-    background: linear-gradient(135deg, rgba(1, 22, 39, 0.308), rgba(255, 255, 255, 0));
+    /* background: linear-gradient(135deg, rgba(1, 22, 39, 0.308), rgba(255, 255, 255, 0)); */
     color: white;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
     border-radius: 16px;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
+    height: 90vh;
+    background: #011627;
+}
+
+/*
+SCROLLBAR
+*/
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+    margin: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #607B96;
+    border-radius: 8px;
 }
 
 /*
@@ -80,7 +100,7 @@ MENU
 }
 
 .menu-contact a {
-    padding: 8px 32px;
+    padding: 9px 32px;
     display: block;
 }
 
@@ -194,6 +214,8 @@ HOMEPAGE
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 100%;
+    overflow: hidden;
 }
 .presentation, .snake-game {
     padding: 32px 64px;
@@ -217,12 +239,12 @@ PORTFOLIO
     display: flex;
     flex-direction: column;
     border-right: 1px solid #607B96;
-    width: 200px;
+    min-width: 200px;
 }
 
 .left-bar p {
     border-bottom: 1px solid #607B96;
-    padding: 8px 0;
+    padding: 8px;
 }
 
 .filter {
@@ -238,4 +260,128 @@ PORTFOLIO
 .filter label {
     display: flex;
     justify-content: space-between;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 32px ;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.portfolio-project {
+    border: 1px solid #607B96;
+    border-radius: 8px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-portfolio h2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.box-portfolio img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.portfolio-description {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 0.9em;
+    height: 100%;
+    justify-content: space-between;
+    background-color: #001221;
+    border-radius: 0 0 8px 8px;
+}
+
+.portfolio-description button {
+     background-color: #607b9633;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     padding: 8px;
+     width: fit-content;
+     font-family: 'Fira Code', sans-serif;
+     cursor: pointer;
+}
+
+/*
+CONTACT
+*/
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.contact-left, .contact-right {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+}
+
+.contact-left {
+    border-right: 1px solid #607B96;
+}
+
+.contacts-info p {
+    font-size: 0.8em !important;
+    display: flex;
+    gap: 8px;
+    color: #607B96 !important;
+    font-weight: 400 !important;
+}
+
+.left-bar p {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.contact-left {
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left label {
+    font-family: 'Fira Code', sans-serif;
+    color: #607B96;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 0.9em;
+}
+
+.contact-left input {
+    border: 1px solid #607B96;
+    border-radius: 4px;
+    background-color: #011221;
+    height: 24px;
+    width: 20vw;
+    outline-color: #607B96;
+    outline-width: 1em;
+    outline: none;
+    color: #607B96;
+    font-family: 'Fira Code', sans-serif;
+}
+
+.contact-btn button {
+    background-color: #607b9636;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Fira Code', sans-serif;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.contact-btn button:hover {
+    background-color: #607B96;
 }
