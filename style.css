@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-h1, h2, p, a {
+h1, h2, h3, p, a {
     font-family: 'Fira Code', sans-serif;
 }
 
@@ -117,7 +117,6 @@ TESTIMONIALS
     background-color: #011221;
     border-radius: 8px;
     border: 1px solid #607B96;
-    scale: 0.8;
 }
 
 .box-container {
@@ -131,9 +130,19 @@ TESTIMONIALS
 .box-container::-webkit-scrollbar {
     display: none;
 }
+.box-container h3 {
+    margin: 0;
+}
+.job {
+    color: white;
+    margin-bottom: 16px;
+}
 
 .box {
-    width: 360px;
+    width: 200px;
+}
+.box p:last-child {
+    font-size: 0.9em;
 }
 
 .btns-container {
@@ -380,8 +389,22 @@ CONTACT
     font-family: 'Fira Code', sans-serif;
     padding: 8px;
     cursor: pointer;
+    margin-top: 16px;
 }
 
 .contact-btn button:hover {
     background-color: #607B96;
+}
+
+.contacts-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-left textarea {
+    background-color: #001221;
+    border: 1px solid #607B96;
+    border-radius: 4px;
+    width: 20vw;
+    height: 10vh;
+    resize: vertical;
 }

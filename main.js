@@ -4,9 +4,9 @@ const nextBtn = document.querySelector(".next-btn");
 const box = document.querySelector(".box");
 
 nextBtn.onclick = () => {
-    document.querySelector(".box-container").scrollLeft += 400;
+    document.querySelector(".box-container").scrollLeft += 240;
 };
 
 backBtn.onclick = () => {
-    document.querySelector(".box-container").scrollLeft -= 400;
+    document.querySelector(".box-container").scrollLeft -= 240;
 };
