@@ -16,17 +16,34 @@
                 <div class="left-bar">
                     <p><i class="fa-solid fa-caret-down"></i> filtre</p>
                     <div class="filter">
-                        <label for="filter">Wordpress<input type="checkbox" id="filter"></label>
-                        <label for="filter">Woocommerce<input type="checkbox" id="filter"></label>
-                        <label for="filter">HTML<input type="checkbox" id="filter"></label>
-                        <label for="filter">CSS<input type="checkbox" id="filter"></label>
-                        <label for="filter">Javascript<input type="checkbox" id="filter"></label>
-                        <label for="filter">API<input type="checkbox" id="filter"></label>
+                        <label for="filter-wordpress" data-filter="wordpress">Wordpress<input type="checkbox" id="filter-wordpress"></label>
+                        <label for="filter-woocommerce" data-filter="woocommerce">Woocommerce<input type="checkbox" id="filter-woocommerce"></label>
+                        <label for="filter-multi" data-filter="multi">Multi-langues<input type="checkbox" id="filter-multi"></label>
                     </div>
                 </div>
                 <div class="portfolio-content">
-                    <div class="box-portfolio">
-                        <h2 class="portfolio-title">Projet 1 // Maison Madrina</h2>
+                    <div class="box-portfolio" data-tech="wordpress">
+                        <h2 class="portfolio-title">Projet 1 // NEUBAUER Groupe</h2>
+                        <div class="portfolio-project">
+                            <img src="images/neubauer-groupe.webp" alt="NEUBAUER Groupe">
+                            <div class="portfolio-description">
+                                <p class="portfolio-text">Site vitrine pour un distributeur automobile regroupant une trentaine de concessions pour 25 marques.</p>
+                                <a href="https://www.neubauer.fr/" target="_blank"><button class="portfolio-btn">voir le projet</button></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="box-portfolio" data-tech="wordpress woocommerce">
+                        <h2 class="portfolio-title">Projet 2 // Boutique NEUBAUER</h2>
+                        <div class="portfolio-project">
+                            <img src="images/boutique-neubauer.webp" alt="Boutique NEUBAUER">
+                            <div class="portfolio-description">
+                                <p class="portfolio-text">Site e-commerce de vente de produits lifestyle à l'effigie de marques automobiles.</p>
+                                <a href="https://boutique.neubauer.fr/" target="_blank"><button class="portfolio-btn">voir le projet</button></a>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="box-portfolio" data-tech="wordpress woocommerce">
+                        <h2 class="portfolio-title">Projet 3 // Maison Madrina</h2>
                         <div class="portfolio-project">
                             <img src="images/maison-madrina.webp" alt="Maison Madrina">
                             <div class="portfolio-description">
@@ -35,8 +52,8 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="box-portfolio">
-                        <h2 class="portfolio-title">Projet 2 // La Pangée Internationale</h2>
+                    <div class="box-portfolio" data-tech="wordpress multi">
+                        <h2 class="portfolio-title">Projet 4 // La Pangée Internationale</h2>
                         <div class="portfolio-project">
                             <img src="images/la-pangee-internationale.webp" alt="La Pangée Internationale">
                             <div class="portfolio-description">
@@ -45,8 +62,8 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="box-portfolio">
-                        <h2 class="portfolio-title">Projet 3 // Acerola Production</h2>
+                    <div class="box-portfolio" data-tech="wordpress">
+                        <h2 class="portfolio-title">Projet 5 // Acerola Production</h2>
                         <div class="portfolio-project">
                             <img src="images/acerola-production.webp" alt="Acerola Production">
                             <div class="portfolio-description">
@@ -55,13 +72,13 @@
                                 </div>
                         </div>
                     </div>
-                    <div class="box-portfolio">
-                        <h2 class="portfolio-title">Projet 4 // Vision Mobile TV</h2>
+                    <div class="box-portfolio" data-tech="wordpress woocommerce multi">
+                        <h2 class="portfolio-title">Projet 6 // Jean-Michel Cabrimol et La Maafia</h2>
                         <div class="portfolio-project">
-                            <img src="images/vision-mobile-tv.webp" alt="Vision Mobile TV">
+                            <img src="images/la-maafia.webp" alt="Jean-Michel Cabrimol et La Maafia">
                             <div class="portfolio-description">
-                                <p class="portfolio-text">Site de formations gratuites et payantes en ligne avec système d'abonnements, etc.</p>
-                                <a href="https://www.visionmobiletv.com/" target="_blank"></a><button class="portfolio-btn">voir le projet</button></a>
+                                <p class="portfolio-text">Site e-commerce de vente de tickets, produits dérivés et CDs pour le groupe "La Maafia".</p>
+                                <a href="https://jeanmichelcabrimol-et-lamaafia.com//" target="_blank"></a><button class="portfolio-btn">voir le projet</button></a>
                                 </div>
                         </div>
                     </div>
@@ -75,5 +92,6 @@
     <script src="https://kit.fontawesome.com/e6a435a23d.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <script src="headerFooter.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>

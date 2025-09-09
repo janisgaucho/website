@@ -240,6 +240,16 @@ HOMEPAGE
 .janis-job {
     margin-bottom: 64px;
 }
+#gameCanvas {
+    border-radius: 16px; 
+}
+.side-projects-link {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.side-projects-link:hover {
+    text-decoration: none;
+}
 
 /*
 PORTFOLIO

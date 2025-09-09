@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Janis Botella</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet"></head>
 <body>
 
     <div class="container">
@@ -16,11 +18,11 @@
             <div class="presentation">
                 <p>Bonjour, je suis</p>
                 <h1>Janis Botella</h1>
-                <p class="janis-job">> Développeur web</p>
-                <p class="side-projects">//par passion, je développe en permanence<br>//retrouvez mes projets persos juste ici<br>const projetsPerso = <a href="" class="side-projects-link">github.com/janisgaucho</a></p>
+                <p class="janis-job">> Chef de projet / Développeur web</p>
+                <p class="side-projects">//par passion, je développe en permanence<br>//retrouvez mes projets persos juste ici<br>const projetsPerso = <a href="https://github.com/janisgaucho" class="side-projects-link" target="_blank">github.com/janisgaucho</a></p>
             </div>
             <div class="snake-game">
-                <p>Snake game</p>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
             </div>
         </div>
 
@@ -30,5 +32,6 @@
     <script src="https://kit.fontawesome.com/e6a435a23d.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <script src="headerFooter.js"></script>
+    <script src="snake.js"></script>
 </body>
 </html>

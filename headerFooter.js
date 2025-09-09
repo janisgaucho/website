@@ -8,7 +8,6 @@ class SpecialHeader extends HTMLElement {
             <div class="menu-links">
                 <a href="index.html" class="menu-link active">_accueil</a>
                 <a href="portfolio.html" class="menu-link">_portfolio</a>
-                <a href="services.html" class="menu-link">_services</a>
             </div>
             <div class="menu-contact">
                 <a href="contact.html" class="menu-link">_contactez moi</a>
@@ -36,9 +35,8 @@ class SpecialFooter extends HTMLElement {
                 <p>retrouvez moi sur</p>
             </div>
             <div class="socials">
-                <a href="https://x.com/janisgaucho" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/janisbotella/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/janisbotella/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>                
-                <a href="https://www.reddit.com/user/janisgaucho/" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>            
             </div>
 
             <div class="github">

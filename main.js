@@ -10,3 +10,4 @@ nextBtn.onclick = () => {
 backBtn.onclick = () => {
     document.querySelector(".box-container").scrollLeft -= 240;
 };
+
